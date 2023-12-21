@@ -79,12 +79,12 @@ WSGI_APPLICATION = 'recruitment_app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'jobs_db',
-        'USER': 'users_db',
-        'PASSWORD': 'passwords_db',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'django_recruitment',  # The name of the database you created
+        'USER': 'root',  # XAMPP default MySQL user is 'root'
+        'PASSWORD': '',  # XAMPP default MySQL password is empty
+        'HOST': 'localhost',  # Set to your database host
+        'PORT': '3306',  # Default MySQL port
     }
 }
 

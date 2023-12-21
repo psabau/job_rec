@@ -1,0 +1,38 @@
+<!-- main/templates/main/home.html -->
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitment Home</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Recruitment App</h1>
+        <p>Find your dream job or the perfect candidate.</p>
+        <div class="login-button-container">
+            <form method="post" action="{% url 'login' %}">
+                {% csrf_token %}
+                <!-- Assuming you have a form object passed from the view -->
+                {{ form.as_p }}
+                <button type="submit" class="login-button">Log In</button>
+            </form>
+        </div>
+        <div class="signup-button-container">
+            <a href="{% url 'signup' %}" class="signup-button">Sign Up</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Content goes here -->
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Recruitment App</p>
+    </footer>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

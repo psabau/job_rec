@@ -1,0 +1,80 @@
+/* main/static/css/styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.login-button {
+    background-color: transparent;
+    border: 2px solid white; /* Add border if you want */
+    color: white;
+}
+
+/* Center login form on the page */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Use viewport height to take the full height of the screen */
+}
+
+/* Responsive field sizes */
+input[type="text"],
+input[type="password"],
+button[type="submit"] {
+    width: 100%; /* Full width */
+    max-width: 300px; /* Maximum width */
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Responsive page structure */
+@media (max-width: 768px) {
+    /* Styles for screens smaller than 768px */
+    .login-button-container,
+    header,
+    footer {
+        text-align: center;
+    }
+
+    .login-button {
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
+.signup-button-container {
+    position: absolute;
+    top: 20px;
+    right: 80px; /* Adjust as needed */
+}
+
+.signup-button {
+    background-color: transparent;
+    border: 2px solid white; /* Add border if you want */
+    color: white;
+}
